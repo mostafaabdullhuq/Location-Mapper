@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+    @apply bg-zinc-900 text-zinc-300 flex w-screen h-screen items-center justify-center flex-col gap-4 container max-w-[1200px];
+}
+
+.map-container {
+    @apply w-full flex items-center justify-center border h-[70%] rounded-md border-zinc-700;
+}
+
+.map-container.invalid {
+    @apply text-red-500;
+}
+
+.search-form {
+    @apply grid grid-cols-6 gap-4 w-full;
+}
+
+.search-input {
+    @apply px-6 bg-zinc-800 placeholder:text-zinc-500 py-3.5 rounded-md col-span-5 outline-none text-gray-300;
+}
+
+.search-input.invalid {
+    @apply border border-red-500;
+}
+
+.search-submit-btn {
+    @apply bg-slate-700 hover:bg-slate-800 col-span-1 transition-colors outline-slate-800 text-zinc-300 rounded-md p-3 disabled:bg-zinc-700 disabled:text-zinc-500;
+}
+
+.error-container {
+    @apply p-3 bg-red-500 w-full rounded-md  items-center justify-center text-white hidden;
+}
+
+.error-container.active {
+    @apply flex;
+}

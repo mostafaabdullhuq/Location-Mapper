@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/output.css">
+    <script src="./dist/js/bundle.js" defer></script>
+    <title>Location Mapper</title>
+</head>
+
+<body class="main">
+    <div id="map-container" class="map-container">Loading map..</div>
+    <div id="error-container" class="error-container"></div>
+    <form method="POST" class="search-form">
+        <input class="search-input" placeholder="Address to search for" type="text" name="search" id="search">
+        <button id="search-submit" class="search-submit-btn" type="submit">Find Address</button>
+    </form>
+</body>
+
+</html>
