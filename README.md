@@ -35,7 +35,7 @@ Location Mapper is a TypeScript/Webpack project that integrates Google Maps and 
     npm install
     ```
 
-4. Rename `.env.example` file to `.env` and change the value of `GOOGLE_MAPS_API_KEY` to your own Google Maps API key.
+4. Rename `.env.example` file to `.env` and change the value of `GOOGLE_API_KEY` to your own Google Maps API key.
 
 5. Start the development server:
 
