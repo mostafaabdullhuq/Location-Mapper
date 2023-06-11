@@ -20,5 +20,6 @@ export default loader.load().then(async () => {
 
 export function renderMap(latitude: number, longitude: number) {
     map.setCenter({ lat: latitude, lng: longitude });
+    new google.maps.Marker({ position: { lat: latitude, lng: longitude }, map: map });
     map.setZoom(17);
 }
